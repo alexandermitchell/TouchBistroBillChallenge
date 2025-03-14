@@ -26,7 +26,7 @@ class BillViewModel: ObservableObject {
         self.billCalculator = billCalculator
     }
 
-    /// Used for displaying ordered
+    /// Used for displaying ordered sections in list
     var orderedCategories: [ItemCategory] {
         billItems.keys.sorted { $0.rawValue < $1.rawValue }
     }
